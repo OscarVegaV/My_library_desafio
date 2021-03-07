@@ -25,12 +25,5 @@
   <%= @book.checkin %>
 </p>
 
-<div class="btn-group-toggle" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-    <input type="checkbox" checked> <%= link_to 'Edit', edit_book_path(@book) %>
-  </label>|
-  <label class="btn btn-secondary active">
-    <input type="checkbox" checked> <%= link_to 'Back', books_path %>
-  </label>
-</div>
-<br>
+<button type="button" class="btn btn-light"><%= link_to 'Edit', edit_book_path(@book) %></button>|
+<button type="button" class="btn btn-light"><%= link_to 'Back', books_path %></button><br><br>
