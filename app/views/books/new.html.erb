@@ -1,5 +1,10 @@
-<h1>New Book</h1>
+<h1 class="text-white">New Book</h1>
 
 <%= render 'form', book: @book %>
 
-<%= link_to 'Back', books_path %>
+
+
+<nav class="navbar navbar-light bg-info">
+  <form class="form-inline">  
+    <button type="button" class="btn btn-light btn-lg"><%= link_to 'Back', books_path %></button>
+  </form>

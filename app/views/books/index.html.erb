@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Books</h1>
+<h1 class="text-center text-white">Books</h1>
 
 <table>
   <thead>
@@ -32,4 +32,8 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+
+<nav class="navbar navbar-light bg-info">
+  <form class="form-inline">  
+    <button type="button" class="btn btn-light btn-lg"><%= link_to 'New Book', new_book_path %></button>
+  </form>
